@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         imageView = (ImageView) findViewById(R.id.image);
+        //bitmap工厂类
         Bitmap bitmapFactory = BitmapFactory.decodeResource(getResources(),R.drawable.aaa);
         imageView.setImageDrawable(new MyCircleView(bitmapFactory));
 
