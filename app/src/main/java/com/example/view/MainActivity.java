@@ -7,12 +7,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
 import com.example.view.view.MyCircleView;
+import com.example.view.view.MyRoundRectView;
 import com.example.view.view.MySquareView;
 
 public class MainActivity extends AppCompatActivity {
 
     private ImageView imageView;
     private ImageView imageView2;
+    private ImageView imageView3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,10 +22,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         imageView = (ImageView) findViewById(R.id.image);
         imageView2 = (ImageView) findViewById(R.id.image2);
+        imageView3 = (ImageView) findViewById(R.id.image3);
         //bitmap工厂类
         Bitmap bitmapFactory = BitmapFactory.decodeResource(getResources(),R.drawable.aaa);
         imageView.setImageDrawable(new MyCircleView(bitmapFactory));
         imageView2.setImageDrawable(new MySquareView(bitmapFactory));
+        imageView3.setImageDrawable(new MyRoundRectView(bitmapFactory));
 
     }
 }
