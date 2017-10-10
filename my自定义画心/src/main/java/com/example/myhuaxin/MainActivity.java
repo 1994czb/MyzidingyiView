@@ -1,4 +1,4 @@
-package com.example.sanjiaoxing;
+package com.example.myhuaxin;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -14,9 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         myView = (MyView) findViewById(R.id.myview);
-
-
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.bbb);
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.aaa);
         myView.setBitmap(bitmap);
     }
 }
